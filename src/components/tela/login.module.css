@@ -1,0 +1,58 @@
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: Helvetica;
+    /* border: 1px solid rebeccapurple; */
+
+    user-select: none;
+}
+
+/*----- INICIO - TELA LOGIN -------------------------------------------*/
+.login-main{
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(255,175,2,255) url("../../img/index-bg.png") no-repeat right bottom;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing:content-box;
+    overflow:visible;
+}
+.login-title{
+    font-size: 112px;
+    font-weight: bolder;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-input-name{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 12px;
+}
+
+.buttons-login-check{
+    font-size: 12px;
+    align-self: flex-start;
+    margin: 8px 8px;
+}
+.buttons-login-lost{
+    font-size: 10px;
+    margin: 12px 8px;
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+/*----- FIM - TELA LOGIN -------------------------------------------*/

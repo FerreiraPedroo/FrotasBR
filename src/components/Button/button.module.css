@@ -1,0 +1,73 @@
+.button {
+    margin:4px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    border:none;
+    user-select: none;
+}
+.button:hover{
+    cursor: pointer;
+    border:1px solid black;
+}
+/*-------------------------*/
+.bgcolor-red{
+    background-color:red
+}
+.bgcolor-blue{
+    background-color:blue
+}
+.bgcolor-green{
+    background-color:green
+}
+.bgcolor-yellow{
+    background-color:yellow;
+}
+/*-------------------------*/
+.width-1x{
+    width: 32px;
+}
+.width-2x{
+    width: 64px;
+}
+.width-3x{
+    width: 90px;
+}
+.width-4x{
+    width: 128px
+}
+.width-5x{
+    width: 160px
+}
+/*-------------------------*/
+.height-1x{
+    height: 24px;
+}
+.height-2x{
+    height: 32px;
+}
+.height-3x{
+    height: 48px;
+}
+.height-4x{
+    height: 64px;
+}
+.height-5x{
+    height: 80px;
+}
+
+
+/*-------------------------*/
+.button-1x{
+    width: 24px;
+    height: 24px;
+}
+.button-2x{
+    width: 32px;
+    height: 32px;
+}
+.button-3x{
+    width: 48px;
+    height: 48px;
+}

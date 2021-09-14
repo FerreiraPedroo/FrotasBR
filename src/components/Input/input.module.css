@@ -1,0 +1,40 @@
+.input{
+    margin:4px;
+    height:32px;
+
+    text-align: center;
+    font-size: 16px;
+
+    border: 1px solid silver;
+    border-radius: 4px;
+    outline:0;
+    user-select: none;
+}
+.height-1x{
+    height: 10px;
+}
+
+.width-1x{
+    width: 32px;
+}
+.width-2x{
+    width: 64px;
+}
+.width-3x{
+    width: 128px;
+}
+.width-4x{
+    width: 160px;
+}
+.width-5x{
+    width: 256px;
+}
+.width-6x{
+    width: 320px;
+}
+.width-7x{
+    width: 448px;
+}
+.width-100{
+    width:100%;
+}
