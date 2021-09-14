@@ -3,8 +3,6 @@ import classes from "./index.module.css"
 
 export default function NavBar() {
 
-
-
     return (
         <>
             <nav className={"navbar navbar-default m-0 p-0 text-white " + classes.navbar_principal}>
@@ -18,12 +16,12 @@ export default function NavBar() {
             </nav>
 
             <div className="input-group input-group-sm my-1">
-                <Link to="/motoristas" className="btn btn-outline-secondary" type="button">MOTORISTA</Link>
-                <button className="btn btn-outline-secondary" type="button">MULTA</button>
-                <button className="btn btn-outline-secondary" type="button">VEICULO</button>
+                <Link to="/" className="btn btn-outline-secondary" type="button">INICIO</Link>
+                <Link to="/motorista" className="btn btn-outline-secondary" type="button">MOTORISTA</Link>
+                <Link to="/multa" className="btn btn-outline-secondary" type="button">MULTA</Link>
+                <Link to="/veiculo" className="btn btn-outline-secondary" type="button">VEICULO</Link>
                 <input type="text" className="form-control" placeholder="" aria-label="Example text with two button addons" />
             </div>
-
         </>
     )
 }

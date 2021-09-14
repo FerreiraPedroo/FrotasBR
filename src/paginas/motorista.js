@@ -1,54 +1,46 @@
+import { Link } from "react-router-dom"
+import listaMotorita from "../dados/listamotorista"
+
 
 export default function Motoristas() {
 
     return (
-<div className="m-2">
-        <table className="table table-sm table-striped caption-top">
-            <caption className="text-center">LISTA DE MOTORISTA</caption>
-            <thead>
-                <tr>
-                    <th scope="col ">MATRICULA</th>
-                    <th scope="col">NOME</th>
-                    <th scope="col">AREA</th>
-                    <th scope="col">HABILITAÇÃO</th>
-                    <th scope="col">PONTUAÇÃO</th>
-                    <th scope="col">VEICULO</th>
-                    <th scope="col">PLACA</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+        <div className="m-2 border rounded-3">
+            <table className="table table-sm table-striped caption-top border">
+                <caption className="text-center">LISTA DE MOTORISTA</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">MATRICULA</th>
+                        <th scope="col">NOME</th>
+                        <th scope="col">HABILITAÇÃO</th>
+                        <th scope="col">PONTUAÇÃO</th>
+                        <th scope="col">VENCIMENTO</th>
+                        <th scope="col">VEICULO</th>
+                        <th scope="col">PLACA</th>
+                        <th scope="col">AREA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        listaMotorita.map((motorista) => {
+                            return (
+                                <tr>
+                                    <th scope="row">{motorista.matricula}</th>
+                                    <td ><Link className="text-decoration-none" to={"/motorista/"+motorista.matricula} >{motorista.nome}</Link></td>
+                                    <td>{motorista.habilitacao}</td>
+                                    <td>{motorista.pontuacao}</td>
+                                    <td>{motorista.vencimentoHabilitacao}</td>
+                                    <td>{motorista.veiculo}</td>                                    
+                                    <td><Link className="text-decoration-none" to={"/veiculo/"+motorista.placa} >{motorista.placa}</Link></td>
+                                    <td>{motorista.area}</td>
+                                </tr>
+                            )
+                        })
+                    }
 
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Otto</td>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
 
-</div>
+        </div>
     )
 }

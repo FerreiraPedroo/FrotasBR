@@ -1,9 +1,10 @@
 import Motoristas from "../paginas/motorista";
 import Inicio from "../paginas/inicio";
+import Veiculo from "../paginas/veiculo";
 
 const rotasRaiz = [
     {
-        path: "/motoristas",
+        path: "/motorista",
         componete: Motoristas,
         title: "MOTORISTAS"
     },
@@ -12,11 +13,11 @@ const rotasRaiz = [
     //     componete: Multas,
     //     title: "MULTAS"
     // },
-    // {
-    //     path: "/veiculo",
-    //     componete: Veiculo,
-    //     title: "VEICULO"
-    // },
+    {
+        path: "/veiculo",
+        componete: Veiculo,
+        title: "VEICULO"
+    },
     {
         path: "/",
         componete: Inicio,
